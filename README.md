@@ -1,6 +1,5 @@
-# python 实现Hmm、最大概率分词的中文分词和词性标注
-
-完整代码和数据，参见本实验的 github地址：[https://github.com/xuzf-git/WordSegment-and-PosTag](https://github.com/xuzf-git/WordSegment-and-PosTag)
+<h1 style="text-align: center"> 中文分词和词性标注 <h1>
+[TOC] 
 
 ## 1、实验目的
 
@@ -545,7 +544,7 @@ if __name__ == "__main__":
 
 选取语料库中的6000行数据进行评估，运行结果如下图：
 
-<img src="D:\Projects\nlp\word-segmentation\data\result_segmentation.png" alt="img" style="zoom:75%;" />
+<img src="./data/result_segmentation.png" style="zoom:75%;" />
 
 由评估结果可知，最大概率分词模型效果最优，相较于最短路径模型有3% 的提升；Hmm 模型运行效率远低于其他两个模型，且效果不佳。
 
@@ -553,7 +552,7 @@ if __name__ == "__main__":
 
 选取语料库中的2000行数据进行评估，运行结果如下图：
 
-<img src="D:\Projects\nlp\word-segmentation\data\result_postag.png" alt="img" style="zoom:75%;" />
+<img src="./data/result_postag.png" alt="img" style="zoom:75%;" />
 
 运行结果第一项是对标准分词结果进行词性标注，运行结果第二项是对最大概率分词模型的预测结果进行分词（只有当词语被正确划分出并且词性标注争取时才会被标记为预测正确）
 
