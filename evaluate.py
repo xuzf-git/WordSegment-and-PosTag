@@ -59,7 +59,7 @@ def word_segmentation_eval(trainfile):
     print("效率:\t{:.3f} kb/s\n".format(dataset_size / (etime - stime)))
 
     # 保存分词结果
-    with open('./data/PeopleDaily_Token_hmm_result.txt', 'w', encoding='utf8') as f:
+    with open('./data/PeopleDaily_Token_mp_result.txt', 'w', encoding='utf8') as f:
         for i in token_res:
             f.write(' '.join(i) + '\n')
     return token_res
@@ -99,7 +99,7 @@ if __name__ == "__main__":
     testfile = './data/PeopleDaily_Token.txt'
     posTag_eval(trainfile, testfile)
     # 在最大概率分词集合上标注词性
-    testfile = './data/PeopleDaily_Token_shortpath_result.txt'
+    testfile = './data/PeopleDaily_Token_mp_result.txt'
     posTag_eval(trainfile, testfile)
     
 
